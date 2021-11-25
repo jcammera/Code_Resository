@@ -46,7 +46,9 @@ print("Third Row")
 m = 2
 print(x_in[m,0]*  kernel_in[1,1]+x_in[m,1]*  kernel_in[1,0]+ \
       x_in[m+1,0]*kernel_in[0,1]+x_in[m+1,1]*kernel_in[0,0])
-      
+
+print(x_in[m,1]*  kernel_in[1,1]+x_in[m,2]*  kernel_in[1,0]+ \
+      x_in[m+1,1]*kernel_in[0,1]+x_in[m+1,2]*kernel_in[0,0])
       
 print(kernel_in)
 print(kernel_in.T)
@@ -63,5 +65,3 @@ print("The goal = ")
 print(np.array([[4,3],[2,1]]))
 
 
-print(x_in[m,1]*  kernel_in[1,1]+x_in[m,2]*  kernel_in[1,0]+ \
-      x_in[m+1,1]*kernel_in[0,1]+x_in[m+1,2]*kernel_in[0,0])
